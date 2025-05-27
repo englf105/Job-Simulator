@@ -9,10 +9,12 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.layout.AnchorPane?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
    <bottom>
-      <TitledPane fx:id="viewApplicantInfo" prefHeight="200.0" prefWidth="200.0" text="View Applicant Info" BorderPane.alignment="CENTER">
+      <TitledPane id="viewApplicantInfo" fx:id="viewApplicantInfo" prefHeight="200.0" prefWidth="200.0" text="View Applicant Info" BorderPane.alignment="CENTER">
          <content>
             <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
@@ -21,7 +23,7 @@
                         <TextFlow prefHeight="200.0" prefWidth="200.0" />
                      </content>
                      <content>
-                        <TextArea fx:id="applicantResumeText" prefHeight="200.0" prefWidth="200.0" promptText="Applicant resume goes here:" />
+                        <TextArea id="applicantResumeText" fx:id="applicantResumeText" prefHeight="200.0" prefWidth="200.0" promptText="Applicant resume goes here:" />
                      </content>
                 </Tab>
                 <Tab text="Requested Job">
@@ -38,16 +40,16 @@
       </TitledPane>
    </bottom>
    <left>
-      <Button fx:id="rejectApplicant" mnemonicParsing="false" text="Reject" BorderPane.alignment="CENTER" />
+      <Button id="rejectApplicant" fx:id="rejectApplicant" mnemonicParsing="false" text="Reject" BorderPane.alignment="CENTER" />
    </left>
    <right>
-      <Button fx:id="hireApplicant" mnemonicParsing="false" text="Hire" BorderPane.alignment="CENTER" />
+      <Button id="hireApplicant" fx:id="hireApplicant" mnemonicParsing="false" text="Hire" BorderPane.alignment="CENTER" />
    </right>
    <top>
-      <Label fx:id="applicantName" text="New Applicant" BorderPane.alignment="CENTER" />
+      <Label id="applicantName" fx:id="applicantName" text="New Applicant" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <ImageView fx:id="applicantImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      <ImageView id="applicantImage" fx:id="applicantImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
             <Image url="@../../../../../../../../Downloads/images.png" />
          </image>
