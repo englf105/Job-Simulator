@@ -49,9 +49,9 @@
       <Label id="applicantName" fx:id="applicantName" text="New Applicant" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <ImageView id="applicantImage" fx:id="applicantImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      <ImageView id="applicantImage" fx:id="applicantImage" fitHeight="225.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
-            <Image url="@../../../../../../../../Downloads/images.png" />
+            <Image url="@../../images/placeholder-image.png" />
          </image>
       </ImageView>
    </center>
