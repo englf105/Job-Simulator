@@ -25,7 +25,7 @@ public class PrimaryController{
     
     @FXML
     Button hireApplicant = new Button();
-
+    
     @FXML
     Button rejectApplicant = new Button();
 
